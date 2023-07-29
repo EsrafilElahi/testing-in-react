@@ -53,8 +53,10 @@ describe('TodoList Component', () => {
 describe('TodoList Component', () => {
   test('matches snapshot', () => {
     const { asFragment } = render(<TodoList />);
+    const { container } = render(<TodoList />);
     expect(asFragment()).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });
 
-// npm test -- --updateSnapshot
+// npm test --updateSnapshot
