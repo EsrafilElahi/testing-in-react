@@ -56,3 +56,5 @@ describe('TodoList Component', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 });
+
+// npm test -- --updateSnapshot
