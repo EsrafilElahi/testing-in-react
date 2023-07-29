@@ -5,7 +5,7 @@ import TodoList from './TodoList';
 
 describe('TodoList Component', () => {
   test('renders TodoList with no todos', () => {
-    // Render the component with no initial todos
+    // rendering the component we want to test
     const { getByText, queryByText, getByRole } = render(<TodoList />);
 
     // Check if the heading and input elements are in the document
