@@ -49,3 +49,10 @@ describe('TodoList Component', () => {
     expect(deletedTodo).not.toBeInTheDocument();
   });
 });
+
+describe('TodoList Component', () => {
+  test('matches snapshot', () => {
+    const { asFragment } = render(<TodoList />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+});
